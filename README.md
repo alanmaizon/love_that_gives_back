@@ -233,7 +233,7 @@ flowchart TD
 - **As a couple, I want to edit my profile details and update my supported charities so that I can choose which charities are displayed on my profile.**
 - **As a couple, I want to see a list of confirmed donations (filtered by the charities I support) so that I can track the contributions and share my gratitude.**
 
-### Admin
+### Admin (Superusers)
 - **As an admin, I want to log in and view an admin dashboard so that I can manage all donations and user data.**
 - **As an admin, I want to update the status of donations (mark them as confirmed or failed) so that the system reflects the correct payment status.**
 - **As an admin, I want to view overall statistics and analytics (e.g., donation trends, percentages, reports) so that I can monitor platform performance.**

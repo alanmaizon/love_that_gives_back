@@ -1,4 +1,33 @@
+
+
+
 # **❤️ Love That Gives Back**
+
+- [Concept Overview](#concept-overview)
+- [Front-End Features](#front-end-features)
+  - [Home Page (Landing Page)](#1-home-page-landing-page)
+  - [User Authentication](#2-user-authentication)
+  - [Dashboard](#3-dashboard)
+  - [Charity Pages (CRUD Features)](#4-charity-pages-crud-features)
+  - [Responsive Design](#5-responsive-design)
+  - [API Integration](#6-api-integration)
+- [Back-End Features](#back-end-features)
+  - [Django Server](#1-django-server)
+  - [Database](#2-database)
+  - [User Authentication & Authorization](#3-user-authentication--authorization)
+  - [Donation Management](#4-donation-management)
+  - [Automated Testing](#5-automated-testing)
+- [Tools & Technologies](#tools--technologies)
+  - [Front-End](#front-end)
+  - [Back-End](#back-end)
+  - [Version Control & Deployment](#version-control--deployment)
+- [ER Diagram](#er-diagram)
+- [Sitemap](#sitemap)
+- [User Flow](#user-flow)
+- [User Stories](#user-stories)
+  - [Guest User (Wedding Guest)](#guest-user-wedding-guest)
+  - [Wedding Couple (Profile Owner)](#wedding-couple-profile-owner)
+  - [Admin (Superuser)](#admin)
 
 ---
 
@@ -19,64 +48,63 @@
 - Highlight charity statistics (e.g., total donations).  
 
 ### 2. **User Authentication**  
-- Registration: Name, email, password.  
-- Login/Logout: Use Django Rest Framework for token-based authentication.  
+- Registration: Collect user information (Name, email, password) using Django forms.  
+- Login/Logout: Leverage Django’s built-in authentication system with user-friendly views and session management.  
 
 ### 3. **Dashboard**  
-- Display personalized greetings.  
+- Display personalized greetings using dynamic Django templates.  
 - Show donation history and progress.  
-- Enable users to set donation goals.  
+- Enable users to set and track donation goals through integrated Django views.
 
 ### 4. **Charity Pages (CRUD Features)**  
-- Explore three charities with descriptions, images, and goals.  
-- Allow users (admins) to create/update/delete charity profiles.  
-- Enable commenting or "likes" on charities as a bonus feature.  
+- Showcase multiple charities with detailed descriptions, images, and fundraising goals.  
+- Allow admin users to create, update, and delete charity profiles through Django’s admin interface and custom views.  
+- Optionally, enable commenting or "likes" on charity pages using Django forms for enhanced engagement.
 
 ### 5. **Responsive Design**  
-- Use bootstrap and CSS for a modern, responsive design.
-- Ensure compatibility across devices.  
+- Utilize Bootstrap along with custom CSS to create a modern, responsive design.  
+- Ensure full compatibility across devices with Django’s static files management.
 
 ### 6. **API Integration**  
-- **External API:** Display live progress using an external API, e.g., PayPal or Stripe for secure payments.  
+- **External API:** Integrate with external payment processors (e.g., PayPal or Stripe) via Django views to display live donation progress and handle secure payments.
 
 ---
 
 ## **Back-End Features**  
 
 ### 1. **Django Server**  
-- RESTful API with Django Rest Framework.  
-- Serve data to the React front-end.  
+- Develop a RESTful API using Django Rest Framework for any necessary data interchange.  
+- Serve dynamic HTML pages rendered through Django’s templating engine.
 
 ### 2. **Database**  
-- PostgreSQL for scalable and reliable data management.  
-- Store user profiles, charity data, and donation transactions.  
+- Use PostgreSQL for scalable and reliable data management.  
+- Store user profiles, charity data, and donation transactions securely.
 
 ### 3. **User Authentication & Authorization**  
-- Secure user login with hashed passwords.  
-- Assign roles (admin, authenticated user, guest).  
+- Secure user login with hashed passwords using Django's robust authentication system.  
+- Manage user roles (admin, authenticated user, guest) via Django’s permission framework.
 
 ### 4. **Donation Management**  
-- CRUD functionality for donations.  
-- Generate donation receipts.  
+- Implement CRUD functionality for managing donations through Django views and forms.  
+- Generate donation receipts and send confirmation emails using Django’s email utilities.
 
 ### 5. **Automated Testing**  
-- Use Django's `unittest` framework to test API endpoints and functionality.  
+- Utilize Django’s `unittest` framework to rigorously test views, forms, and API endpoints.
 
 ---
 
 ## **Tools & Technologies**  
 
 ### **Front-End:**  
-- React with React Router.  
-- Axios for API calls.   
+- Django Templates with the built-in templating engine and URL routing.
 
 ### **Back-End:**  
-- Django with Django Rest Framework.  
-- PostgreSQL database.  
+- Django with Django Rest Framework for API development.  
+- PostgreSQL for database management.
 
 ### **Version Control & Deployment:**  
 - Git for version control.  
-- Deploy front-end and back-end with Render.  
+- Deploy the full-stack Django application on platforms like Render or Heroku.
 
 ---
 
